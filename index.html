@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Told by Lucas</title>
+  <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="menu">
+    <div class="h-menu">
+      <img src="imgs/Logo.svg" alt="logo" class="logo">
+      <button id="btn-close">close</button>
+    </div>
+    <ul class="nav">
+      <li><a href="https://www.linkedin.com/in/lucas-a-carvalho-4682b4177">Let's connect on linkedin</a></li>
+      <li><a href="mailto:lucass_sc@icloud.com">send me an e-mail</a></li>
+      <li><a href="https://www.behance.net/lucass_sc">See my posts</a></li>
+    </ul>
+    <div class="f-menu">
+      <img src="imgs/arrow.svg" alt="">
+      <img src="imgs/vector.svg" alt="">
+    </div>
+  </div>
+
+  <header>
+    <img src="imgs/logo.svg" alt="logo">
+    <nav>
+      <button id="btn-open">
+        <p>menu</p>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main">
+      <div class="div-texto1">
+        <p>Brazilian Creative Designer</p>
+      </div>
+
+      <div class="div-texto2">
+        <p>UX / UI Designer at Mccann Health.</p>
+      </div>
+
+      <div class="div-foto"><img src="imgs/foto.png" alt="" class="foto"></div>
+
+      <div class="div-texto3">
+        <p>I create end-to-end digital solutions through design.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="imgs/arrow.svg" alt="">
+    <img src="imgs/vector.svg" alt="">
+  </footer>
+
+  <script>
+    //menu
+    //open menu
+    const btnOpen = document.getElementById('btn-open');
+    const menu = document.getElementById('menu');
+
+    function openMenu() {
+      menu.classList.add('active');
+    }
+
+    btnOpen.addEventListener('click', openMenu);
+
+    //close menu
+    const btnClose = document.getElementById('btn-close');
+
+    function closeMenu() {
+      menu.classList.remove('active');
+    }
+
+    btnClose.addEventListener('click', closeMenu);
+  </script>
+</body>
+</html>
